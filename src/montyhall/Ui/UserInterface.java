@@ -28,11 +28,6 @@ public class UserInterface extends javax.swing.JFrame implements Observer {
     private Game game;
     
     /**
-     * The UI manager for the application
-     */
-    private UIManager uiManager;
-    
-    /**
      * The button group of radio buttons
      */
     private ButtonGroup btnGroup;
@@ -55,7 +50,6 @@ public class UserInterface extends javax.swing.JFrame implements Observer {
         this.btnGroup = new ButtonGroup();
         this.btnGroup.add(this.rbStrategyOne);
         this.btnGroup.add(this.rbStrategyTwo);
-        this.uiManager = new UIManager();
         this.game = c.getGame();
         this.game.registerObserver(this);
     }
